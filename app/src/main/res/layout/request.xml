@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/request_image"
+        android:layout_width="128dp"
+        android:layout_margin="8dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ph"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/request_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="32dp"
+                android:text="Type"
+                android:textSize="16dp"/>
+            <Button
+                android:id="@+id/request_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:text="Accept"
+                />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:id="@+id/request_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ragnar Lodbrok,[a] according to legends,[2] was a Viking hero and a Danish and Swedish king.[3] He is known from Old Norse poetry of the Viking Age, Icelandic sagas, and near-contemporary chronicles. According to the traditional literature, Ragnar distinguished himself by conducting many raids against the British Isles and the Holy Roman Empire during the 9th century. He also appears in Norse legends, and according to the legendary sagas Tale of Ragnar's Sons and a Saga about Certain Ancient Kings, Ragnar Lodbrok's father has been given as the legendary king of the Swedes, Sigurd Ring.[4][5]"/>
+
+        </ScrollView>
+        </LinearLayout>
+
+</LinearLayout>

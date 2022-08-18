@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <!-- everything you already have -->
+        <TextView
+            android:id="@+id/CreatePostHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="Create Post"
+            android:textColor="#030303"
+            android:textSize="56dp" />
+
+
+        <Spinner
+            android:id="@+id/product_category_post"
+            android:layout_width="294dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/CreatePostHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edit_text_background"
+            android:entries="@array/categories"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/product_photos_1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/product_category_post"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_1"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/product_1" />
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/product_2" />
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_3"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/product_3" />
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_4"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/product_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/product_photos_2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/product_photos_1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_5"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/product_5" />
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_6"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/product_6" />
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_7"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/product_7" />
+
+            <ImageButton
+                android:scaleType="fitCenter"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_8"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                android:src="@drawable/product_8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/product_photos_3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/product_photos_2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_9"
+                android:layout_width="136dp"
+                android:layout_height="96dp"
+                android:src="@drawable/product_9" />
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:onClick="get_image"
+                android:backgroundTint="@color/white"
+                android:id="@+id/product_10"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                android:src="@drawable/product_10" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/product_city_post"
+            android:entries="@array/cities"
+            android:layout_width="294dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/product_photos_3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edit_text_background"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/product_description_post"
+            android:layout_width="292dp"
+            android:layout_height="162dp"
+            android:layout_below="@id/product_city_post"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Description"
+            android:textColorHint="#030303"
+            android:textSize="48dp" />
+
+        <Button
+            android:id="@+id/create_post_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_description_post"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/round_btn"
+            android:text="Create"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+    <fragment
+        android:id="@+id/f2"
+        android:name="com.example.badellha.bottom_bar"
+        tools:layout="@layout/fragment_bottom_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

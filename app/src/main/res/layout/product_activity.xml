@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".product_activity"
+    android:id="@+id/grid_activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/show_product"
+        android:orientation="horizontal"
+        android:layout_margin="32dp"
+        android:layout_weight="40">
+
+    </LinearLayout>
+    <fragment
+        android:id="@+id/f2"
+        android:name="com.example.badellha.bottom_bar"
+        tools:layout="@layout/fragment_bottom_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Badellha</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="cities">
+        <item>Cairo</item>
+        <item>Alexandria</item>
+        <item>Giza</item>
+        <item>Aswan</item>
+        <item>Luxor</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Headphone</item>
+        <item>TV</item>
+        <item>Laptop</item>
+        <item>Bag</item>
+        <item>Book</item>
+        <item>Clock</item>
+    </string-array>
+</resources>

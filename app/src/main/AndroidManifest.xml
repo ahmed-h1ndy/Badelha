@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.badellha">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Badellha"
+        tools:targetApi="31">
+        <activity
+            android:name=".updated_profile_info"
+            android:exported="false" />
+        <activity
+            android:name=".create_new_post"
+            android:exported="false" />
+        <activity
+            android:name=".Registeration"
+            android:exported="false" />
+        <activity
+            android:name=".Home_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".other_person_account"
+            android:exported="false" />
+        <activity
+            android:name=".my_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Requests_activity"
+            android:exported="false" />
+        <activity
+            android:name=".product_activity"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
