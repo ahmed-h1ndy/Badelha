@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Requests_activity">
+    tools:context=".Requests_activity"
+    android:background="@drawable/pic_22"
+    >
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

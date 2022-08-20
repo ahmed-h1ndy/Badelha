@@ -6,4 +6,8 @@
     <style name="semi_circle">
         <item name="cornerSize">25%</item>
     </style>
+    <style name="green_button" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/holo_green_light</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

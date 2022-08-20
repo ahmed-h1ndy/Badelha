@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/pic_4"
     tools:context=".my_profile">
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,14 +38,14 @@
                         android:text="Ahmed Mostafa"
                         android:textSize="24dp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_marginTop="50dp"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Edit Profile"
                         android:id="@+id/edit_button"
-                        android:backgroundTint="@color/black"
+                        android:backgroundTint="@color/teal_200"
                         app:shapeAppearanceOverlay="@style/Circle"
                         android:textSize="24dp"
                         android:textStyle="bold"
@@ -65,6 +66,7 @@
                     android:id="@+id/governorate_icon"
                     android:src="@drawable/ic_marker"/>
                 <TextView
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/my_city"
@@ -88,6 +90,7 @@
                     android:src="@drawable/ic_at"/>
                 <TextView
                     android:layout_width="wrap_content"
+                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:text="Ahmed Mostafa@gmail.com"
                     android:id="@+id/my_email_address"
@@ -109,6 +112,7 @@
                     android:layout_margin="16dp"
                     android:src="@drawable/ic_baseline_local_phone_24"/>
                 <TextView
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:id="@+id/my_phone_number"
                     android:layout_height="wrap_content"

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/pic_4"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -30,7 +32,7 @@
                         android:text="Ahmed Mostafa"
                         android:textSize="24dp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_marginTop="50dp"/>
 
                 </LinearLayout>
@@ -49,7 +51,9 @@
                     android:src="@drawable/ic_marker"/>
                 <EditText
                     android:layout_width="wrap_content"
+                    android:backgroundTint="@color/white"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:id="@+id/update_my_city"
                     android:text="Giza"
                     android:textSize="24dp"
@@ -72,7 +76,9 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
                     android:text="Ahmed Mostafa@gmail.com"
+                    android:textColor="@color/white"
                     android:id="@+id/update_my_email_address"
                     android:textSize="16dp"
                     android:textStyle="bold"
@@ -94,8 +100,10 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:id="@+id/update_my_phone_number"
+                    android:backgroundTint="@color/white"
                     android:layout_height="wrap_content"
                     android:text="8784875489"
+                    android:textColor="@color/white"
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:layout_marginTop="30dp"
@@ -117,7 +125,10 @@
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:layout_marginTop="30dp"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="@color/teal_200"
+                    app:shapeAppearanceOverlay="@style/Circle"
+                    />
 
             </LinearLayout>
 

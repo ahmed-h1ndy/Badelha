@@ -5,18 +5,20 @@
     tools:context="com.example.badellha.Home_Activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/pic_17"
+    >
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="190">
-        <LinearLayout
+        <GridLayout
             android:layout_width="match_parent"
+            android:columnCount="2"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_margin="8dp"
             android:id="@+id/products_grid">
-        </LinearLayout>
+        </GridLayout>
 
     </ScrollView>
     <fragment

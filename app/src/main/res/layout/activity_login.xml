@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@drawable/pic_14">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -99,13 +100,14 @@
             android:layout_marginLeft="200dp"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="0dp"
-            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/teal_200"
+            app:shapeAppearanceOverlay="@style/Circle"
+            android:onClick="login"
             android:text="Login"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="24dp"
-            android:textStyle="bold"
-            android:onClick="login"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/go_to_register_button"
@@ -116,13 +118,14 @@
             android:layout_marginLeft="200dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="40dp"
-            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/teal_200"
+            app:shapeAppearanceOverlay="@style/Circle"
+            android:onClick="register"
             android:text="Register"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="24dp"
-            android:textStyle="bold"
-            android:onClick="register"/>
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/visible"

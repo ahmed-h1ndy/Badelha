@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -68,9 +69,9 @@ public class Home_Activity extends AppCompatActivity {
         // first we get parent layout
         // then the child that we want to add
         // and we add that child to parent
-        LinearLayout parent = findViewById(R.id.products_grid);
+        GridLayout parent = findViewById(R.id.products_grid);
         View view = LayoutInflater.from(this).inflate(R.layout.product,parent,false);
-        LinearLayout item = view.findViewById(R.id.products_grid);
+        GridLayout item = view.findViewById(R.id.products_grid);
         parent.addView(view);
 
         //get views

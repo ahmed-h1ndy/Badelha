@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Registeration extends AppCompatActivity {
@@ -42,6 +43,7 @@ Button submit_button;
 
             }
         });
+        ((TextView)findViewById(R.id.img_1)).setBackgroundColor(Color.GREEN);
 
     }
 
@@ -92,6 +94,9 @@ Button submit_button;
                     gender="male";
                     ((LinearLayout)findViewById(R.id.men_images)).setVisibility(View.VISIBLE);
                     ((LinearLayout)findViewById(R.id.women_images)).setVisibility(View.INVISIBLE);
+                    String profile_image="men_avatar_1";
+                    TextView men_img=findViewById(R.id.img_1);
+                    highlight_img(men_img);
                     break;
                 }
             case R.id.radio_female:
@@ -100,6 +105,9 @@ Button submit_button;
                     gender="female";
                     ((LinearLayout)findViewById(R.id.women_images)).setVisibility(View.VISIBLE);
                     ((LinearLayout)findViewById(R.id.men_images)).setVisibility(View.INVISIBLE);
+                    String profile_image="women_avatar_1";
+                    TextView women_img=findViewById(R.id.img_1);
+                    highlight_img(women_img);
                     break;
                 }
         }
@@ -112,34 +120,87 @@ Button submit_button;
         switch(view.getId()) {
             case R.id.men_image_1:
                 profile_image="men_avatar_1";
+                //highlighting the pic chosen
+                TextView v1=findViewById(R.id.img_1);
+                highlight_img(v1);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.men_image_2:
                 profile_image="men_avatar_2";
+                //highlighting the pic chosen
+                TextView v2=findViewById(R.id.img_2);
+                highlight_img(v2);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.men_image_3:
                 profile_image="men_avatar_3";
+                //highlighting the pic chosen
+                TextView v3=findViewById(R.id.img_3);
+                highlight_img(v3);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.men_image_4:
                 profile_image="men_avatar_4";
+                //highlighting the pic chosen
+                TextView v4=findViewById(R.id.img_4);
+                highlight_img(v4);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.men_image_5:
                 profile_image="men_avatar_5";
+                //highlighting the pic chosen
+                TextView v5=findViewById(R.id.img_5);
+                highlight_img(v5);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.women_image_1:
                 profile_image="women_avatar_1";
+                //highlighting the pic chosen
+                TextView v6=findViewById(R.id.img_1);
+                highlight_img(v6);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.women_image_2:
                 profile_image="women_avatar_2";
+                //highlighting the pic chosen
+                TextView v7=findViewById(R.id.img_2);
+                highlight_img(v7);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.women_image_3:
                 profile_image="women_avatar_3";
+                //highlighting the pic chosen
+                TextView v8=findViewById(R.id.img_3);
+                highlight_img(v8);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.women_image_4:
                 profile_image="women_avatar_4";
+                //highlighting the pic chosen
+                TextView v9=findViewById(R.id.img_4);
+                highlight_img(v9);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.women_image_5:
                 profile_image="women_avatar_5";
+                //highlighting the pic chosen
+                TextView v10=findViewById(R.id.img_5);
+                highlight_img(v10);
+                Toast.makeText(getApplicationContext(),"Nice Choice!",Toast.LENGTH_SHORT).show();
                 break;
         }
+    }
+    public void highlight_img(TextView v)
+    {
+        //first set all profile pics highlighting to -> white
+        ((TextView)findViewById(R.id.img_1)).setBackgroundColor(Color.WHITE);
+        ((TextView)findViewById(R.id.img_2)).setBackgroundColor(Color.WHITE);
+        ((TextView)findViewById(R.id.img_3)).setBackgroundColor(Color.WHITE);
+        ((TextView)findViewById(R.id.img_4)).setBackgroundColor(Color.WHITE);
+        ((TextView)findViewById(R.id.img_5)).setBackgroundColor(Color.WHITE);
+
+        //then set the chosen pic highlight to -> green
+        v.setBackgroundColor(Color.GREEN);
+
     }
 }

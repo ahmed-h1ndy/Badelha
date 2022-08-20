@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".product_activity"
-    android:id="@+id/grid_activity">
+    android:id="@+id/grid_activity"
+    android:background="@drawable/pic_21"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

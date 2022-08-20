@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class product_activity extends AppCompatActivity {
 
@@ -41,7 +42,7 @@ public class product_activity extends AppCompatActivity {
         //already explained in home_activity, go back there
 
         LinearLayout parent = findViewById(R.id.show_product);
-        View view = LayoutInflater.from(this).inflate(R.layout.product,parent,false);
+        View view = LayoutInflater.from(this).inflate(R.layout.product_preview,parent,false);
         LinearLayout item = view.findViewById(R.id.show_product);
         parent.addView(view);
         Baddelha_database db=new Baddelha_database(this);
