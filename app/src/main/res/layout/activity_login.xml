@@ -80,34 +80,24 @@
             android:inputType="textPassword"
             android:textSize="28dp" />
 
-        <TextView
-            android:id="@+id/forget"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/password_input"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="forgot password?"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
 
         <Button
             android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/forget"
+            android:layout_below="@id/password_input"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="200dp"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="0dp"
             android:backgroundTint="@color/teal_200"
-            app:shapeAppearanceOverlay="@style/Circle"
             android:onClick="login"
             android:text="Login"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="24dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:shapeAppearanceOverlay="@style/Circle" />
 
         <Button
             android:id="@+id/go_to_register_button"
@@ -126,15 +116,5 @@
             android:textColor="@color/white"
             android:textSize="24dp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/visible"
-            android:layout_width="41dp"
-            android:layout_height="35dp"
-            android:layout_below="@id/password_login"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="19dp"
-            android:layout_toRightOf="@id/password_input"
-            app:srcCompat="@drawable/ic_eye" />
     </RelativeLayout>
 </ScrollView>
