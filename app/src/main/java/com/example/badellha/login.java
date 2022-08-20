@@ -25,10 +25,8 @@ TextView forgot_password_button;
 
         email_textView=findViewById(R.id.email_input);
         password_textView=findViewById(R.id.password_input);
-        visible_imageView=findViewById(R.id.visible);
         login_button=findViewById(R.id.login_button);
         register_button=findViewById(R.id.go_to_register_button);
-        forgot_password_button=findViewById(R.id.forget);
     }
 
     // when you click register button this function executes

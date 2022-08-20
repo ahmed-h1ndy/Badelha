@@ -73,17 +73,18 @@
                     android:id="@+id/email_address_ico2n"
                     android:layout_margin="16dp"
                     android:src="@drawable/ic_at"/>
-                <EditText
+
+                <TextView
+                    android:id="@+id/update_my_email_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
                     android:backgroundTint="@color/white"
                     android:text="Ahmed Mostafa@gmail.com"
                     android:textColor="@color/white"
-                    android:id="@+id/update_my_email_address"
                     android:textSize="16dp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginLeft="30dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
             <LinearLayout

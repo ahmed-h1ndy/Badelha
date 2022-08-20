@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class updated_profile_info extends AppCompatActivity {
     String username,city,email,phone_number;
-    EditText username_text_view,city_text_view,email_text_view,phone_number_text_view;
+    EditText username_text_view,city_text_view,phone_number_text_view;
+    TextView email_text_view;
     Button update_button;
 
     @Override
