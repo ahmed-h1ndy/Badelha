@@ -1,9 +1,13 @@
 package com.example.badellha;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,8 +18,20 @@ import android.widget.Toast;
 public class login extends AppCompatActivity {
 EditText email_textView,password_textView;
 ImageView visible_imageView;
-Button login_button,register_button;
+Button login_button,register_button,credits;
 TextView forgot_password_button;
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        MenuInflater inflater=new MenuInflater(this);
+        inflater.inflate(R.menu.context_menu,menu);
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        return super.onContextItemSelected(item);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +43,19 @@ TextView forgot_password_button;
         password_textView=findViewById(R.id.password_input);
         login_button=findViewById(R.id.login_button);
         register_button=findViewById(R.id.go_to_register_button);
+        credits=findViewById(R.id.credits);
+
+
+
+        credits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(getApplicationContext(),Credits.class);
+                startActivity(i);
+            }
+        });
+        registerForContextMenu(login_button);
+
     }
 
     // when you click register button this function executes

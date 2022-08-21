@@ -107,7 +107,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="200dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="20dp"
             android:backgroundTint="@color/teal_200"
             app:shapeAppearanceOverlay="@style/Circle"
             android:onClick="register"
@@ -116,5 +116,21 @@
             android:textColor="@color/white"
             android:textSize="24dp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/go_to_register_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#1e81b0"
+            android:text="Credits"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:shapeAppearanceOverlay="@style/Circle" />
     </RelativeLayout>
 </ScrollView>

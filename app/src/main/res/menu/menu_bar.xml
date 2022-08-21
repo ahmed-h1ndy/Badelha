@@ -3,4 +3,12 @@
 <item
     android:id="@+id/item1"
     android:title="why not"></item>
+    <item android:id="@+id/fslj"
+        android:title="nested">
+    <menu android:id="@+id/nested_menu"
+        android:title="nesteeeeeeed">
+        <item android:id="@+id/fjslkjg"
+            android:title="nesteeeeeeeeeeeeeed">so nested</item>
+
+    </menu></item>
 </menu>

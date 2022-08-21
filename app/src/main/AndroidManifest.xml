@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Badellha"
         tools:targetApi="31">
         <activity
+            android:name=".Credits"
+            android:exported="false" />
+        <activity
             android:name=".updated_profile_info"
             android:exported="false" />
         <activity

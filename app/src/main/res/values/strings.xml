@@ -17,4 +17,13 @@
         <item>Book</item>
         <item>Clock</item>
     </string-array>
+    <string-array name="team_members">
+        <item>Ahmed Mostafa</item>
+        <item>Mohamed Ali</item>
+        <item>Ahmed Montasser</item>
+        <item>Merna Fakt</item>
+        <item>Yehia Magdy</item>
+        <item>Ahmed Shabaan</item>
+        <item>Mazen Magdy</item>
+    </string-array>
 </resources>
