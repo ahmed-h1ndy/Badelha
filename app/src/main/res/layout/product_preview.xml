@@ -102,26 +102,6 @@
                 android:gravity="center"
                 android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/product_delete"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Delete/hide"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:backgroundTint="@color/teal_200"
-                    app:shapeAppearanceOverlay="@style/Circle"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Send Request"
-                    android:textSize="16dp"
-                    android:id="@+id/send_request_button"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/teal_200"
-                    app:shapeAppearanceOverlay="@style/Circle"
-                    ></Button>
 
 
             </LinearLayout>

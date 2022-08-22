@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 public class product_activity extends AppCompatActivity {
 
-    Button delete,send_request;
     TextView category_text_view,description_text_view,owner_text_view,city_text_view;
     String category="none";
     String description ="none";
@@ -43,14 +42,11 @@ public class product_activity extends AppCompatActivity {
 
         LinearLayout parent = findViewById(R.id.show_product);
         View view = LayoutInflater.from(this).inflate(R.layout.product_preview,parent,false);
-        LinearLayout item = view.findViewById(R.id.show_product);
         parent.addView(view);
         Baddelha_database db=new Baddelha_database(this);
 
         //get views xml -> java
 
-        delete=view.findViewById(R.id.product_delete);
-        send_request=view.findViewById(R.id.send_request_button);
         category_text_view=view.findViewById(R.id.product_category);
         description_text_view=view.findViewById(R.id.product_description);
         owner_text_view=view.findViewById(R.id.product_owner);
@@ -73,7 +69,5 @@ public class product_activity extends AppCompatActivity {
         // so i just set them to invisible to disable their functionality
         // sorry guys xD
         //i would appreciate it if you try implement it
-        send_request.setVisibility(View.INVISIBLE);
-        delete.setVisibility(View.INVISIBLE);
     }
 }

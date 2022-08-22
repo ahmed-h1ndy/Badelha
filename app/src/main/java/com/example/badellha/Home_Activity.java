@@ -71,7 +71,6 @@ public class Home_Activity extends AppCompatActivity {
         // and we add that child to parent
         GridLayout parent = findViewById(R.id.products_grid);
         View view = LayoutInflater.from(this).inflate(R.layout.product,parent,false);
-        GridLayout item = view.findViewById(R.id.products_grid);
         parent.addView(view);
 
         //get views

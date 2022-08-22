@@ -48,7 +48,6 @@ public class Requests_activity extends AppCompatActivity {
 
         LinearLayout parent = findViewById(R.id.requests);
         View view = LayoutInflater.from(this).inflate(R.layout.request,parent,false);
-        LinearLayout item = view.findViewById(R.id.requests);
         parent.addView(view);
 
         //get product data
