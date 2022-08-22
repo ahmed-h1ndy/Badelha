@@ -7,14 +7,11 @@
     android:orientation="vertical"
     android:background="@drawable/pic_4"
     tools:context=".my_profile">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight="1">
         <LinearLayout
-            android:orientation="vertical" android:layout_height="wrap_content"
-            android:layout_width="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -125,7 +122,6 @@
             </LinearLayout>
 
         </LinearLayout>
-    </LinearLayout>
     <fragment
         android:id="@+id/f2"
         android:name="com.example.badellha.bottom_bar"
