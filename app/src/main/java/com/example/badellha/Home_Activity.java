@@ -3,6 +3,7 @@ package com.example.badellha;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -130,6 +131,7 @@ public class Home_Activity extends AppCompatActivity {
             }
         });
 
+        city_text_view.setTextColor(Color.RED);
 
     }
 
