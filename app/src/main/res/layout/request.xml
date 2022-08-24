@@ -28,6 +28,20 @@
                 android:layout_marginRight="32dp"
                 android:text="Type"
                 android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/request_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="32dp"
+                android:text="Owner"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <Button
                 android:id="@+id/request_accept"
                 android:layout_width="wrap_content"
@@ -37,7 +51,18 @@
                 android:backgroundTint="@color/teal_200"
                 app:shapeAppearanceOverlay="@style/Circle"
                 />
+            <Button
+                android:id="@+id/request_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:text="Cancel"
+                android:backgroundTint="#FF0000"
+                app:shapeAppearanceOverlay="@style/Circle"
+                />
+
         </LinearLayout>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="90dp"

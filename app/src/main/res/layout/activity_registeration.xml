@@ -4,363 +4,398 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@drawable/pic_12"
+    android:background="#011627"
     >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:stretchColumns="1">
+        android:stretchColumns="1"
+        android:gravity="center"
+        android:layout_gravity="center">
 
         <!-- everything you already have -->
         <TextView
             android:id="@+id/RegistrationHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="36dp"
+            android:layout_marginBottom="32dp"
             android:text="Registration"
-            android:textColor="#030303"
-            android:textSize="56dp"
-            />
+            android:textColor="#FDFFFC"
+            android:textSize="56dp" />
 
-        <TextView
-            android:id="@+id/username"
+        <LinearLayout
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/RegistrationHeader"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:text="Username"
-            android:textColor="#030303"
-            android:textSize="33dp" />
-
-        <EditText
-            android:id="@+id/username_info"
-            android:layout_width="wrap_content"
-            android:layout_height="33dp"
-            android:layout_below="@id/username"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/Password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/username_info"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:text="Password"
-            android:textColor="#030303"
-            android:textSize="33dp" />
-
-        <EditText
-            android:id="@+id/password_info"
-            android:layout_width="wrap_content"
-            android:layout_height="33dp"
-            android:layout_below="@id/Password"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textSize="20dp" />
-        <TextView
-            android:id="@+id/Email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/password_info"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:text="E-mail"
-            android:textColor="#030303"
-            android:textSize="33dp" />
-
-        <EditText
-            android:id="@+id/email_address_info"
-            android:layout_width="wrap_content"
-            android:layout_height="33dp"
-            android:layout_below="@id/Email"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/Phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/email_address_info"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:text="Phone"
-            android:textColor="#030303"
-            android:textSize="33dp" />
-
-        <EditText
-            android:id="@+id/phone_number_info"
-            android:layout_width="wrap_content"
-            android:layout_height="33dp"
-            android:layout_below="@id/Phone"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:inputType="phone"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/City"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/phone_number_info"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:text="City"
-            android:textColor="#030303"
-            android:textSize="33dp" />
-
-        <Spinner
-            android:id="@+id/city_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_below="@id/City"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="150dp"
-            android:background="@drawable/edit_text_background"
-            android:entries="@array/cities"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/Gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/city_spinner"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:text="Gender"
-            android:textColor="#030303"
-            android:textSize="33dp" />
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/Gender"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:gravity="center"
             android:orientation="horizontal"
-            android:id="@+id/radio_gender"
-            android:textSize="20dp">
+            android:layout_marginBottom="32dp">
 
-            <RadioButton
-                android:id="@+id/radio_male"
+            <ImageView
+                android:id="@+id/username"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/my_profile_icon_1"
+                app:tint="#41EAD4" />
+
+            <EditText
+                android:id="@+id/username_info"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Password"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/password_icon"
+                app:tint="#41EAD4" />
+
+            <EditText
+                android:id="@+id/password_info"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Email"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_at"
+                app:tint="#41EAD4" />
+
+            <EditText
+                android:id="@+id/email_address_info"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Phone"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                app:tint="#41EAD4" />
+
+            <EditText
+                android:id="@+id/phone_number_info"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:inputType="phone"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/City"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_marker"
+                app:tint="#41EAD4" />
+
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@drawable/edit_text_background"
+                android:entries="@array/cities"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Gender"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/gender"
+                app:tint="#41EAD4" />
+
+            <RadioGroup
+                android:id="@+id/radio_gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="Male"
-                android:textSize="20dp"
-                android:onClick="get_gender"
-                android:textStyle="bold" />
+                android:orientation="horizontal"
+                android:textSize="20dp">
 
-            <RadioButton
-                android:id="@+id/radio_female"
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="get_gender"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:onClick="get_gender"
+                    android:text="Female"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/imgs_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/img_textt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Choose your profile image"
+                android:textColor="#FDFFFC"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:id="@+id/images_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_textt"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/men_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/img_textt"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">\
+
+                    <ImageButton
+                        android:id="@+id/men_image_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#011627"
+                        android:onClick="get_image"
+                        android:src="@drawable/ic_men_avatar_1" />
+
+                    <ImageButton
+                        android:id="@+id/men_image_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#011627"
+                        android:onClick="get_image"
+                        android:src="@drawable/ic_men_avatar_2" />
+
+                    <ImageButton
+                        android:id="@+id/men_image_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#011627"
+                        android:onClick="get_image"
+                        android:src="@drawable/ic_men_avatar_3" />
+
+                    <ImageButton
+                        android:id="@+id/men_image_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#011627"
+                        android:onClick="get_image"
+                        android:src="@drawable/ic_men_avatar_4" />
+
+                    <ImageButton
+                        android:id="@+id/men_image_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#011627"
+                        android:onClick="get_image"
+                        android:src="@drawable/ic_men_avatar_5" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/img_1"
+                        android:layout_width="40dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView
+                        android:id="@+id/img_2"
+                        android:layout_width="40dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView
+                        android:id="@+id/img_3"
+                        android:layout_width="40dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView
+                        android:id="@+id/img_4"
+                        android:layout_width="40dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView
+                        android:id="@+id/img_5"
+                        android:layout_width="40dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/women_images"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="64dp"
+            android:layout_below="@+id/gender"
+            android:visibility="gone"
+            >
+
+            <ImageButton
+                android:id="@+id/women_image_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:onClick="get_gender"
-                android:text="Female"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </RadioGroup>
+                android:backgroundTint="#011627"
+                android:onClick="get_image"
+                android:src="@drawable/ic_women_avatar_1" />
 
+            <ImageButton
+                android:id="@+id/women_image_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#011627"
+                android:onClick="get_image"
+                android:src="@drawable/ic_women_avatar_2" />
+
+            <ImageButton
+                android:id="@+id/women_image_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#011627"
+                android:onClick="get_image"
+                android:src="@drawable/ic_women_avatar_3" />
+
+            <ImageButton
+                android:id="@+id/women_image_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#011627"
+                android:onClick="get_image"
+                android:src="@drawable/ic_women_avatar_4" />
+
+            <ImageButton
+                android:id="@+id/women_image_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#011627"
+                android:onClick="get_image"
+                android:src="@drawable/ic_women_avatar_5" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/register_page_button"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/images_frame"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="200dp"
-            android:layout_marginBottom="40dp"
-            android:backgroundTint="@color/teal_200"
-            app:shapeAppearanceOverlay="@style/Circle"
+            android:layout_below="@id/imgs_"
+            android:backgroundTint="#B91372"
             android:onClick="register_fun"
             android:text="Register"
             android:textColor="@color/white"
             android:textSize="24dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:shapeAppearanceOverlay="@style/Circle"
+            android:layout_marginTop="16dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Choose your profile image"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="24dp"
-            android:layout_below="@id/radio_gender"
-            android:id="@+id/img_textt"
-            />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:id="@+id/images_frame"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/img_textt"
-            android:orientation="vertical">
-        <LinearLayout
-            android:id="@+id/men_images"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_below="@+id/img_textt"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:gravity="center"
-            android:orientation="horizontal">\
-
-            <ImageButton
-                android:id="@+id/men_image_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:onClick="get_image"
-                android:src="@drawable/ic_men_avatar_1" />
-
-            <ImageButton
-                android:id="@+id/men_image_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:onClick="get_image"
-                android:src="@drawable/ic_men_avatar_2" />
-
-            <ImageButton
-                android:id="@+id/men_image_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:onClick="get_image"
-                android:src="@drawable/ic_men_avatar_3" />
-
-            <ImageButton
-                android:id="@+id/men_image_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:onClick="get_image"
-                android:src="@drawable/ic_men_avatar_4" />
-
-            <ImageButton
-                android:id="@+id/men_image_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:onClick="get_image"
-                android:src="@drawable/ic_men_avatar_5" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:id="@+id/women_images"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            android:visibility="gone"
-            android:gravity="center"
-            android:layout_below="@+id/img_textt">
-            <ImageButton
-                android:onClick="get_image"
-                android:layout_width="wrap_content"
-                android:id="@+id/women_image_1"
-                android:backgroundTint="@color/white"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_women_avatar_1"/>
-            <ImageButton
-                android:onClick="get_image"
-                android:id="@+id/women_image_2"
-                android:layout_width="wrap_content"
-                android:backgroundTint="@color/white"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_women_avatar_2"/>
-            <ImageButton
-                android:onClick="get_image"
-                android:id="@+id/women_image_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:src="@drawable/ic_women_avatar_3"/>
-            <ImageButton
-                android:onClick="get_image"
-                android:id="@+id/women_image_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:src="@drawable/ic_women_avatar_4"/>
-            <ImageButton
-                android:onClick="get_image"
-                android:id="@+id/women_image_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:src="@drawable/ic_women_avatar_5"/>
-
-        </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
-                android:layout_marginLeft="16dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <TextView
-
-                    android:id="@+id/img_1"
-                    android:layout_width="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:layout_height="8dp"></TextView>
-                <TextView
-                    android:id="@+id/img_2"
-                    android:layout_width="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:layout_height="8dp"></TextView>
-                <TextView
-                    android:id="@+id/img_3"
-                    android:layout_width="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:layout_height="8dp"></TextView>
-                <TextView
-                    android:id="@+id/img_4"
-                    android:layout_width="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:layout_height="8dp"></TextView>
-                <TextView
-                    android:id="@+id/img_5"
-                    android:layout_width="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:layout_height="8dp"></TextView>
-            </LinearLayout>
-        </LinearLayout>
 
     </RelativeLayout>
 </ScrollView>

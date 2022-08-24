@@ -36,13 +36,13 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="128dp"
                 android:scaleType="fitXY"
                 android:layout_height="128dp"
                 android:id="@+id/product_image"
                 android:src="@drawable/ph"
                 android:layout_margin="16dp"
-                tools:ignore="MissingClass">
+                >
 
             </ImageView>
             <LinearLayout

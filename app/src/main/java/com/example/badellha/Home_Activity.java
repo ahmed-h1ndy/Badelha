@@ -30,11 +30,6 @@ public class Home_Activity extends AppCompatActivity {
     String id,category,description,image,owner,city;
     ImageView product_image_view;
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_bar,menu);
-        return true;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

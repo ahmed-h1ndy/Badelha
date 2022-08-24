@@ -43,7 +43,8 @@ Button submit_button;
 
             }
         });
-        ((TextView)findViewById(R.id.img_1)).setBackgroundColor(Color.GREEN);
+        TextView men_img=findViewById(R.id.img_1);
+        highlight_img(men_img);
 
     }
 

@@ -21,16 +21,7 @@ ImageView visible_imageView;
 Button login_button,register_button,credits;
 TextView forgot_password_button;
 
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        MenuInflater inflater=new MenuInflater(this);
-        inflater.inflate(R.menu.context_menu,menu);
-    }
 
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
-        return super.onContextItemSelected(item);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +45,6 @@ TextView forgot_password_button;
                 startActivity(i);
             }
         });
-        registerForContextMenu(login_button);
 
     }
 

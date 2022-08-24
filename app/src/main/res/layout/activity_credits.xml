@@ -5,19 +5,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Credits">
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:entries="@array/team_members"/>
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".Credits"
+    android:background="@drawable/pic_1">
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        android:backgroundTint="@color/teal_200"/>
-    <GridView
-        android:id="@+id/my_grid"
+        android:id="@+id/ahmed_mostafa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:numColumns="3"/>
+        android:text="Ahmed Mostafa"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/credits_drawable"
+        android:padding="10dp"
+        android:onClick="go_to_mostafa_facebook"
+        />
+    <TextView
+        android:id="@+id/mohamed_ali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mohamed Ali"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/credits_drawable"
+        android:padding="10dp"
+        android:onClick="go_to_mohamed_facebook"
+        />
+    <TextView
+        android:id="@+id/ahmed_montasser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahmed Montasser"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/credits_drawable"
+        android:padding="10dp"
+        android:onClick="go_to_montasser_facebook"
+        />
+    <TextView
+        android:id="@+id/merna_sameh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Merna Sameh"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/credits_drawable"
+        android:padding="10dp"
+        android:onClick="go_to_merna_facebook"
+        />
+    <TextView
+        android:id="@+id/mazen_magdy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mazen Magdy"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/credits_drawable"
+        android:padding="10dp"
+        android:onClick="go_to_mazen_facebook"
+        />
+    <TextView
+        android:id="@+id/yehia_magdy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yehia Magdy"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/credits_drawable"
+        android:padding="10dp"
+        android:onClick="go_to_yehia_facebook"
+        />
+    <TextView
+        android:id="@+id/ahmed_shabaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahmed Shabaan"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/credits_drawable"
+        android:padding="10dp"
+        android:onClick="go_to_shabaan_facebook"
+        />
+
+
 
 </LinearLayout>
