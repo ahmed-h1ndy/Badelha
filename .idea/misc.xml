@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Badellha/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2095" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/creat_post_style.xml" value="0.143" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/create_button.xml" value="0.143" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/credits_drawable.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/edit_profile_button.xml" value="0.2135" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/edit_text_background.xml" value="0.1805" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/ic_at.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.189" />
@@ -31,11 +34,18 @@
         <entry key="..\:/Badellha/app/src/main/res/drawable/ic_women_avatar_3.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/ic_women_avatar_4.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/ic_women_avatar_5.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/login_buttons_style.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/login_style.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/my_home_icon.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/my_profile_icon.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/my_profile_icon_1.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/password_icon.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/product_background.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/product_place_button.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/product_type_style.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/request_accept.xml" value="0.1675" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/request_background.xml" value="0.1675" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/request_cancel.xml" value="0.1675" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/round_btn.xml" value="0.1805" />
         <entry key="..\:/Badellha/app/src/main/res/font/edit_text_background.xml" value="0.22135416666666666" />
         <entry key="..\:/Badellha/app/src/main/res/font/font.xml" value="0.32666666666666666" />

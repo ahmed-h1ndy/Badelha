@@ -58,8 +58,12 @@ public class Requests_activity extends AppCompatActivity {
         description=p.getPRODUCT_DESCRIPTION();
         image=p.getPRODUCT_IMAGE();
 
+        //get user who sent the request
+        User user=db.get_user(sender);
+
         //get views data from xml
 
+        owner_text_view=view.findViewById(R.id.request_owner);
         category_text_view=view.findViewById(R.id.request_category);
         description_text_view=view.findViewById(R.id.request_description);
         accept_button=view.findViewById(R.id.request_accept);
@@ -70,6 +74,7 @@ public class Requests_activity extends AppCompatActivity {
 
         category_text_view.setText(category);
         description_text_view.setText(description);
+        owner_text_view.setText(user.getUSER_EMAIL());
 
         //already explained in home_activity
 

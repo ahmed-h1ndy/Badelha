@@ -126,8 +126,6 @@ public class Home_Activity extends AppCompatActivity {
             }
         });
 
-        city_text_view.setTextColor(Color.RED);
-
     }
 
     public void go_to_owner_profile(String owner)

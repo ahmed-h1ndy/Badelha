@@ -5,8 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.badellha.Home_Activity"
     android:id="@+id/product_id"
-    android:layout_width="200dp"
-    android:layout_height="470dp">
+    android:layout_width="180dp"
+    android:layout_height="450dp"
+    android:padding="5dp"
+    android:background="@drawable/product_background"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,9 +31,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="email@gmail.com"
-                    android:textSize="24dp"
+                    android:textSize="16dp"
                     android:id="@+id/product_owner"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     ></TextView>
 
 
@@ -55,24 +59,26 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:background="@drawable/product_type_style"
                     android:text="Type"
-                    android:textSize="16dp"></TextView>
+                    android:textSize="16dp"
+                    android:padding="5dp"></TextView>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="horizontal"
+                    android:gravity="right"
                     >
                     <TextView
                         android:id="@+id/product_city"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textAlignment="textEnd"
                         android:text="Place"
-                        android:layout_marginEnd="8dp"
                         android:textSize="16dp"
-                        android:textColor="@color/black"></TextView>
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:background="@drawable/product_place_style"></TextView>
 
                 </LinearLayout>
 
@@ -85,11 +91,11 @@
                 android:layout_weight="1">
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="80dp"
                     android:text="Ragnar Lothbrok, one of the most dangerous men on earth."
                     android:textSize="24dp"
                     android:id="@+id/product_description"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     ></TextView>
 
 
@@ -107,8 +113,8 @@
                     android:text="Delete/hide"
                     android:textSize="16dp"
                     android:id="@+id/product_delete"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/teal_200"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#534B52"
                     app:shapeAppearanceOverlay="@style/Circle"
                     ></Button>
                 <Button
@@ -117,8 +123,8 @@
                     android:text="Send Request"
                     android:textSize="16dp"
                     android:id="@+id/send_request_button"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/teal_200"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#534B52"
                     app:shapeAppearanceOverlay="@style/Circle"
                     ></Button>
 

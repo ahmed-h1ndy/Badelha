@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fillViewport="true"
-    android:background="@drawable/pic_2">
+    android:background="#63E2C6">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -42,7 +42,7 @@
             android:layout_marginEnd="0dp"
             android:layout_marginRight="150dp"
             android:layout_marginBottom="0dp"
-            android:background="@drawable/edit_text_background"
+            android:background="@drawable/create_post_style"
             android:entries="@array/categories"
             android:textSize="20dp" />
 
@@ -58,7 +58,7 @@
             <ImageButton
                 android:scaleType="fitXY"
                 android:onClick="get_image"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:id="@+id/product_1"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
@@ -67,7 +67,7 @@
             <ImageButton
                 android:scaleType="fitXY"
                 android:onClick="get_image"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:id="@+id/product_2"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
@@ -76,7 +76,7 @@
             <ImageButton
                 android:scaleType="fitXY"
                 android:onClick="get_image"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:id="@+id/product_3"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
@@ -85,7 +85,7 @@
             <ImageButton
                 android:scaleType="fitXY"
                 android:onClick="get_image"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:id="@+id/product_4"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
@@ -142,7 +142,7 @@
                 android:id="@+id/product_5"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:onClick="get_image"
                 android:scaleType="fitXY"
                 android:src="@drawable/product_5" />
@@ -151,7 +151,7 @@
                 android:id="@+id/product_6"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:onClick="get_image"
                 android:scaleType="fitXY"
                 android:src="@drawable/product_6" />
@@ -160,7 +160,7 @@
                 android:id="@+id/product_7"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:onClick="get_image"
                 android:scaleType="fitXY"
                 android:src="@drawable/product_7" />
@@ -169,7 +169,7 @@
                 android:id="@+id/product_8"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:onClick="get_image"
                 android:scaleType="fitCenter"
                 android:src="@drawable/product_8" />
@@ -223,7 +223,7 @@
             <ImageButton
                 android:scaleType="fitXY"
                 android:onClick="get_image"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:id="@+id/product_9"
                 android:layout_width="136dp"
                 android:layout_height="96dp"
@@ -232,7 +232,7 @@
             <ImageButton
                 android:scaleType="fitXY"
                 android:onClick="get_image"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#63E2C6"
                 android:id="@+id/product_10"
                 android:layout_width="136dp"
                 android:layout_height="96dp"
@@ -266,7 +266,6 @@
 
         <Spinner
             android:id="@+id/product_city_post"
-            android:entries="@array/cities"
             android:layout_width="294dp"
             android:layout_height="47dp"
             android:layout_below="@id/product_photos_3"
@@ -277,7 +276,8 @@
             android:layout_marginEnd="0dp"
             android:layout_marginRight="150dp"
             android:layout_marginBottom="0dp"
-            android:background="@drawable/edit_text_background"
+            android:background="@drawable/create_post_style"
+            android:entries="@array/cities"
             android:textSize="20dp" />
 
         <EditText
@@ -287,9 +287,9 @@
             android:layout_below="@id/product_city_post"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="41dp"
-            android:background="@drawable/edit_text_background"
+            android:background="@drawable/create_post_style"
             android:hint="Description"
-            android:textColorHint="#030303"
+            android:textColorHint="@color/white"
             android:textSize="48dp" />
 
         <Button
@@ -301,12 +301,12 @@
             android:layout_marginLeft="200dp"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="40dp"
+            android:background="@drawable/create_button"
             android:text="Create"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="24dp"
             android:textStyle="bold"
-            android:backgroundTint="@color/teal_200"
-            app:shapeAppearanceOverlay="@style/Circle"/>
+            app:shapeAppearanceOverlay="@style/Circle" />
 
 
 

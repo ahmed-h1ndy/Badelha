@@ -39,14 +39,15 @@
                         android:layout_marginTop="50dp"/>
                     <Button
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="42dp"
+                        android:padding="4dp"
                         android:text="Edit Profile"
                         android:id="@+id/edit_button"
-                        android:backgroundTint="@color/teal_200"
-                        app:shapeAppearanceOverlay="@style/Circle"
+                        android:background="@drawable/edit_profile_button"
                         android:textSize="24dp"
                         android:textStyle="bold"
-                        android:layout_marginTop="50dp"/>
+                        android:layout_marginTop="50dp"
+                        android:textColor="@color/black"/>
 
                 </LinearLayout>
 
