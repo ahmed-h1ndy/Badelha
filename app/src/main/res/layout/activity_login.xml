@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#231123">
+    android:background="@drawable/login_gradiant_background">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,16 +13,17 @@
         android:stretchColumns="1"
         android:gravity="center_horizontal">
 
+
         <TextView
             android:id="@+id/BadelhaHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="56dp"
+            android:fontFamily="@font/bilbo_swash_caps"
             android:text="Badelha"
             android:textColor="@color/white"
             android:textSize="56dp" />
-
 
         <LinearLayout
             android:id="@+id/email_linear"
@@ -44,13 +45,15 @@
 
             <EditText
                 android:id="@+id/email_input"
-                android:padding="8dp"
                 android:layout_width="266dp"
-                android:layout_height="32dp"
+                android:layout_height="36dp"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/login_style"
                 android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="username"
                 android:inputType="textPersonName"
+                android:padding="8dp"
                 android:textSize="16dp" />
 
         </LinearLayout>
@@ -76,14 +79,16 @@
 
             <EditText
                 android:id="@+id/password_input"
-                android:padding="8dp"
                 android:layout_width="266dp"
-                android:layout_height="32dp"
+                android:layout_height="36dp"
                 android:layout_below="@id/password_login"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/login_style"
                 android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="password"
                 android:inputType="textPassword"
+                android:padding="8dp"
                 android:textSize="16dp" />
 
         </LinearLayout>
@@ -94,11 +99,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/password_linear"
+            android:layout_marginLeft="124dp"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="0dp"
             android:background="@drawable/login_buttons_style"
+            android:fontFamily="@font/istok_web"
             android:onClick="login"
-            android:padding="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
             android:text="Login"
             android:textAllCaps="false"
             android:textColor="@color/black"
@@ -110,27 +118,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/login_button"
+            android:layout_marginLeft="112dp"
             android:layout_marginTop="120dp"
-            android:layout_marginLeft="130dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/login_buttons_style"
+            android:fontFamily="@font/istok_web"
+            android:textStyle="bold"
             android:onClick="register"
             android:padding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:text="Register"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="24dp"
-            android:textStyle="bold" />
+ />
 
         <Button
             android:id="@+id/credits"
-            android:layout_marginLeft="136dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/go_to_register_button"
+            android:layout_marginLeft="118dp"
             android:layout_marginBottom="40dp"
+            android:fontFamily="@font/istok_web"
             android:background="@drawable/login_buttons_style"
-            android:padding="8dp"
+            android:paddingLeft="16dp"
+            android:paddingEnd="16dp"
             android:text="Credits"
             android:textAllCaps="false"
             android:textColor="@color/black"

@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:fillViewport="true"
     android:background="#63E2C6">
+    <include layout="@layout/appbar"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -25,6 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="36dp"
+            android:fontFamily="@font/audiowide"
             android:text="Create Post"
             android:textColor="@color/white"
             android:textSize="56dp" />
@@ -302,6 +304,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="40dp"
             android:background="@drawable/create_button"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="Create"
             android:textColor="@color/black"
             android:textSize="24dp"

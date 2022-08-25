@@ -9,23 +9,25 @@
     android:gravity="center"
     tools:context=".Credits"
     android:background="@drawable/pic_1">
+
     <TextView
         android:id="@+id/ahmed_mostafa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ahmed Mostafa"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:textSize="24dp"
-        android:textColor="@color/white"
         android:background="@drawable/credits_drawable"
-        android:padding="10dp"
+        android:fontFamily="@font/amita"
         android:onClick="go_to_mostafa_facebook"
-        />
+        android:padding="10dp"
+        android:text="Ahmed Mostafa"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
     <TextView
         android:id="@+id/mohamed_ali"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/amita"
         android:text="Mohamed Ali"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
@@ -38,6 +40,7 @@
     <TextView
         android:id="@+id/ahmed_montasser"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/amita"
         android:layout_height="wrap_content"
         android:text="Ahmed Montasser"
         android:layout_marginTop="16dp"
@@ -51,6 +54,7 @@
     <TextView
         android:id="@+id/merna_sameh"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/amita"
         android:layout_height="wrap_content"
         android:text="Merna Sameh"
         android:layout_marginTop="16dp"
@@ -65,6 +69,7 @@
         android:id="@+id/mazen_magdy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/amita"
         android:text="Mazen Magdy"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
@@ -78,6 +83,7 @@
         android:id="@+id/yehia_magdy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/amita"
         android:text="Yehia Magdy"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
@@ -89,6 +95,7 @@
         />
     <TextView
         android:id="@+id/ahmed_shabaan"
+        android:fontFamily="@font/amita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ahmed Shabaan"

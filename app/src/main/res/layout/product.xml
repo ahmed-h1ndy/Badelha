@@ -5,10 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.badellha.Home_Activity"
     android:id="@+id/product_id"
-    android:layout_width="180dp"
-    android:layout_height="450dp"
-    android:padding="5dp"
-    android:background="@drawable/product_background"
+    android:layout_width="184dp"
+    android:layout_height="410dp"
+    android:background="@drawable/product_gradient_background"
     android:layout_marginRight="8dp"
     android:layout_marginBottom="8dp">
     <LinearLayout
@@ -34,18 +33,19 @@
                     android:textSize="16dp"
                     android:id="@+id/product_owner"
                     android:textColor="@color/white"
+                    android:visibility="gone"
                     ></TextView>
 
 
             </LinearLayout>
 
             <ImageView
-                android:layout_width="128dp"
+                android:layout_width="match_parent"
                 android:scaleType="fitXY"
-                android:layout_height="128dp"
+                android:layout_height="200dp"
                 android:id="@+id/product_image"
                 android:src="@drawable/ph"
-                android:layout_margin="16dp"
+                android:layout_margin="0dp"
                 >
 
             </ImageView>
@@ -53,12 +53,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:orientation="horizontal"
-                android:layout_margin="16dp">
+                android:layout_margin="8dp">
                 <TextView
                     android:id="@+id/product_category"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:background="@drawable/product_type_style"
                     android:text="Type"
                     android:textSize="16dp"
@@ -88,44 +88,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:layout_margin="8dp">
+
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:text="Ragnar Lothbrok, one of the most dangerous men on earth."
-                    android:textSize="24dp"
                     android:id="@+id/product_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Ragnar Lothbrok, one of the most dangerous men on earth."
                     android:textColor="@color/white"
-                    ></TextView>
+                    android:textSize="24dp"></TextView>
 
 
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_weight="1">
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="32dp"
                     android:text="Delete/hide"
-                    android:textSize="16dp"
+                    android:textSize="10dp"
                     android:id="@+id/product_delete"
                     android:textColor="@color/white"
-                    android:backgroundTint="#534B52"
-                    app:shapeAppearanceOverlay="@style/Circle"
+                    android:background="@drawable/product_canecl_style"
+                    android:padding="3dp"
+                    android:layout_marginTop="8dp"
                     ></Button>
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="32dp"
                     android:text="Send Request"
-                    android:textSize="16dp"
+                    android:textSize="10dp"
                     android:id="@+id/send_request_button"
                     android:textColor="@color/white"
-                    android:backgroundTint="#534B52"
-                    app:shapeAppearanceOverlay="@style/Circle"
+                    android:background="@drawable/product_accept_style"
+                    android:padding="5dp"
                     ></Button>
 
 

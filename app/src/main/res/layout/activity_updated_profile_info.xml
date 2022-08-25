@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/pic_4"
     >
+    <include layout="@layout/appbar"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -25,15 +26,17 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <EditText
                         android:id="@+id/update_my_username"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="monospace"
                         android:text="Ahmed Mostafa"
-                        android:textSize="24dp"
-                        android:textStyle="bold"
                         android:textColor="@color/white"
-                        android:layout_marginTop="50dp"/>
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 

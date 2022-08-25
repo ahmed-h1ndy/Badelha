@@ -8,6 +8,7 @@
     tools:context=".Requests_activity"
     android:background="#F26419"
     >
+    <include layout="@layout/appbar"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

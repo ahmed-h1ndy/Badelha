@@ -8,26 +8,40 @@
     android:background="@drawable/request_background"
     android:layout_marginTop="8dp"
     android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp">
+    android:layout_marginRight="8dp"
+    android:gravity="center_vertical">
+
     <ImageView
         android:id="@+id/request_image"
         android:layout_width="128dp"
-        android:layout_margin="8dp"
         android:layout_height="128dp"
-        android:src="@drawable/ph"
-        android:scaleType="fitXY"/>
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ph" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="80dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/request_owner"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="32dp"
+                android:text="Owner"
+                android:textSize="16dp"/>
 
             <TextView
                 android:id="@+id/request_category"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginBottom="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -37,19 +51,6 @@
                 android:text="Type"
                 android:textSize="16dp" />
 
-            <TextView
-                android:layout_weight="1"
-                android:textAlignment="viewEnd"
-                android:id="@+id/request_owner"
-                android:textColor="@color/black"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="32dp"
-                android:text="Owner"
-                android:textSize="16dp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -84,7 +85,7 @@
 
             <TextView
                 android:id="@+id/request_description"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ragnar Lodbrok,[a] according to legends,[2] was a Viking hero and a Danish and Swedish king.[3] He is known from Old Norse poetry of the Viking Age, Icelandic sagas, and near-contemporary chronicles. According to the traditional literature, Ragnar distinguished himself by conducting many raids against the British Isles and the Holy Roman Empire during the 9th century. He also appears in Norse legends, and according to the legendary sagas Tale of Ragnar's Sons and a Saga about Certain Ancient Kings, Ragnar Lodbrok's father has been given as the legendary king of the Swedes, Sigurd Ring.[4][5]" />

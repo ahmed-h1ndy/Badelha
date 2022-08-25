@@ -35,18 +35,24 @@
         <entry key="..\:/Badellha/app/src/main/res/drawable/ic_women_avatar_4.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/ic_women_avatar_5.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/login_buttons_style.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/login_gradiant_background.xml" value="0.2135" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/login_style.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/my_home_icon.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/my_profile_icon.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/my_profile_icon_1.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/password_icon.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/product_accept_style.xml" value="0.2135" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/product_background.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/product_buttons.xml" value="0.2135" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/product_gradient_background.xml" value="0.2135" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/product_place_button.xml" value="0.189" />
+        <entry key="..\:/Badellha/app/src/main/res/drawable/product_place_style.xml" value="0.2135" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/product_type_style.xml" value="0.189" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/request_accept.xml" value="0.1675" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/request_background.xml" value="0.1675" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/request_cancel.xml" value="0.1675" />
         <entry key="..\:/Badellha/app/src/main/res/drawable/round_btn.xml" value="0.1805" />
+        <entry key="..\:/Badellha/app/src/main/res/font/.xml" value="0.39537037037037037" />
         <entry key="..\:/Badellha/app/src/main/res/font/edit_text_background.xml" value="0.22135416666666666" />
         <entry key="..\:/Badellha/app/src/main/res/font/font.xml" value="0.32666666666666666" />
         <entry key="..\:/Badellha/app/src/main/res/layout/account.xml" value="0.27717391304347827" />
@@ -54,7 +60,7 @@
         <entry key="..\:/Badellha/app/src/main/res/layout/activity_credits.xml" value="0.297554347826087" />
         <entry key="..\:/Badellha/app/src/main/res/layout/activity_grid_view.xml" value="0.28854166666666664" />
         <entry key="..\:/Badellha/app/src/main/res/layout/activity_home_page.xml" value="0.27717391304347827" />
-        <entry key="..\:/Badellha/app/src/main/res/layout/activity_login.xml" value="0.27717391304347827" />
+        <entry key="..\:/Badellha/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Badellha/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Badellha/app/src/main/res/layout/activity_my_profile.xml" value="0.27717391304347827" />
         <entry key="..\:/Badellha/app/src/main/res/layout/activity_other_person_account.xml" value="0.27717391304347827" />
@@ -63,6 +69,7 @@
         <entry key="..\:/Badellha/app/src/main/res/layout/activity_send_request.xml" value="0.19114583333333332" />
         <entry key="..\:/Badellha/app/src/main/res/layout/activity_updated_profile_info.xml" value="0.297554347826087" />
         <entry key="..\:/Badellha/app/src/main/res/layout/app_bar.xml" value="0.27717391304347827" />
+        <entry key="..\:/Badellha/app/src/main/res/layout/appbar.xml" value="0.35643115942028986" />
         <entry key="..\:/Badellha/app/src/main/res/layout/bottom_bar.xml" value="0.27717391304347827" />
         <entry key="..\:/Badellha/app/src/main/res/layout/double_products.xml" value="0.27717391304347827" />
         <entry key="..\:/Badellha/app/src/main/res/layout/external_account.xml" value="0.19010416666666666" />
