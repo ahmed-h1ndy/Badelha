@@ -93,6 +93,7 @@
 
                 <TextView
                     android:id="@+id/product_description"
+                    android:textAlignment="center"
                     android:layout_width="match_parent"
                     android:layout_height="88dp"
                     android:fontFamily="sans-serif-condensed"
