@@ -19,6 +19,7 @@
             android:id="@+id/RegistrationHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
             android:layout_marginBottom="32dp"
             android:fontFamily="@font/audiowide"
             android:text="Registration"
@@ -44,12 +45,13 @@
 
             <EditText
                 android:id="@+id/username_info"
+                android:padding="8dp"
                 android:layout_width="wrap_content"
-                android:layout_height="33dp"
+                android:layout_height="36dp"
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,12 +72,13 @@
 
             <EditText
                 android:id="@+id/password_info"
+                android:padding="8dp"
                 android:layout_width="wrap_content"
-                android:layout_height="33dp"
+                android:layout_height="36dp"
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -95,13 +98,14 @@
                 app:tint="#41EAD4" />
 
             <EditText
+                android:padding="8dp"
                 android:id="@+id/email_address_info"
                 android:layout_width="wrap_content"
-                android:layout_height="33dp"
+                android:layout_height="36dp"
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -122,13 +126,14 @@
                 app:tint="#41EAD4" />
 
             <EditText
+                android:padding="8dp"
                 android:id="@+id/phone_number_info"
                 android:layout_width="wrap_content"
-                android:layout_height="33dp"
+                android:layout_height="36dp"
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="phone"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
         </LinearLayout>
 
         <LinearLayout

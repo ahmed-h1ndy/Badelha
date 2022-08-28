@@ -17,7 +17,6 @@ public class Credits extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
-        ahmed_mostafa=findViewById(R.id.ahmed_mostafa);
 
     }
     public void go_to_mostafa_facebook(View v)
@@ -37,7 +36,7 @@ public class Credits extends AppCompatActivity {
     }
     public void go_to_merna_facebook(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/merna.fakt"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/merna.egp"));
         startActivity(browserIntent);
     }
     public void go_to_mazen_facebook(View v)
